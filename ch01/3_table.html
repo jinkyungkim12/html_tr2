@@ -23,11 +23,13 @@
 
 <body>
 
+<!-- <table>,<td>에만 width를 줄 수 있다. tr에는 주지 않는다 -->
+<!-- 테이블의 헤더 = 번호, 이름, 아이디 부분 -->
 
-	<table>
+	<table width="100%">
 		<tr>
 			<td width="50px">번호</td>
-			<td width="200px">이름</td>
+			<td>이름</td>
 			<td width="300px">아이디</td>
 		</tr>
 		<tr>
@@ -36,6 +38,69 @@
 			<td>Jinkyungkim12</td>
 		</tr>
 	</table>
+	
+	<br>
+	
+  	<table width="100%">
+		<tr>
+			<td width="50px">번호</td>
+			<td>이름</td>
+			<td width="200px">아이디</td>
+			<td width="200px">주소</td>
+			<td width="100px">상세주소</td>
+			<td width="100px">모바일</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>김진경</td>
+			<td>Jinkyungkim12</td>
+			<td>서울시 은평구 녹번동</td>
+			<td>래미안베라힐즈 아파트</td>
+			<td>010-1234-1234</td>
+		</tr>
+	</table>
+  
+  	<br>
+	
+  	<table width="100%">
+	<thead>
+		<tr>
+			<td width="50px">번호</td>
+			<td>이름</td>
+			<td width="200px">아이디</td>
+			<td width="200px">주소</td>
+			<td width="100px">상세주소</td>
+			<td width="100px">모바일</td>
+		</tr>
+		
+	</thead>
+	<tbody>
+		<tr>
+			<td>10</td>
+			<td>김진경</td>
+			<td>Jinkyungkim12</td>
+			<td>서울시 은평구 녹번동</td>
+			<td>래미안베라힐즈 아파트</td>
+			<td>010-1234-1234</td>
+		</tr>
+	</tbody>	
+	
+	</thead>
+	<tfoot>
+		<tr>
+			<td>9</td>
+			<td>김진경</td>
+			<td>Jinkyungkim12</td>
+			<td>서울시 은평구 녹번동</td>
+			<td>래미안베라힐즈 아파트</td>
+			<td>010-1234-1234</td>
+		</tr>
+	</tfoot>	
+	</table>
+  
+ <!--  <thead>, <tbody>,<tfoot> -> 목적성 있는 테이블을 만들기 위해서 - 실험 데이터 같은 거 정리한 것 -->
+  <!-- tr, tb가 가장 중요하다! --> <!-- 갯수를 잘 맞춰야 한다!  -->
+  
   
 </body>
 </html>
