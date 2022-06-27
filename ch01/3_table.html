@@ -4,16 +4,31 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 	<title>3_table</title>
+	
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 10px;
+		}
+	</style>
+	
+	
 </head>
+
+<!-- 표 사이즈 조절해서 줘야 한다. 디자이너보고 사이즈 조절하라고 할 수 없다 
+테이블 행 중에 한개만 플렉서블하게 놔두고 나머지 목록은 고정한다-->
 
 <body>
 
 
 	<table>
 		<tr>
-			<td>번호</td>
-			<td>이름</td>
-			<td>아이디</td>
+			<td width="50px">번호</td>
+			<td width="200px">이름</td>
+			<td width="300px">아이디</td>
 		</tr>
 		<tr>
 			<td>10</td>
