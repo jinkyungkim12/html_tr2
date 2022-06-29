@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>1_form_tr</title>
+
+	<style type="text/css">
+		table, th, td{
+		margin:auto;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 10px;
+		}
+		th{
+			background:#fcb5aa;
+		}
+	</style>
+	
+</head>
+
+
+<body>
+
+	<h1><center>회원가입</center></h1>
+	<br>
+	<h3 style="margin-left:280px"><b>▣기본정보</b></h3>
+	<table width="70%" th width="100px" td width="700px">
+		<tr>
+			<th><center>✔이름</center></th>
+			<td><input type="text" name="name" placeholder="이름" id=name autocomplete="off"></td>
+		</tr>
+		<tr>
+			<th><center>✔아이디</center></th>
+			<td>
+					<input type="text" name="id" placeholder="아이디" id=id autocomplete="off">
+					<input type="button" value="✔아이디중복확인">
+					<br><span style="color: #f25549;">💬 6~16자까지 영문자(소문자), 숫자 사용 가능합니다.</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔비밀번호</center></th>
+			<td>
+				<input type="password" name="password" placeholder="비밀번호" id="password">
+				<br><span style="color: #f25549;">💬 6~16자까지 영문자(소문자), 숫자 및 특수문자 사용 가능합니다.</span>
+				<br><span style="color: #f25549;">3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔비밀번호 확인</center></th> 
+			<td><input type="passwordre" name="passwordre" placeholder="비밀번호 확인" id="password"></td>
+		</tr>
+		<tr>
+			<th><center>✔생년월일/성별</center></th>
+			<td>
+				<input type="date" name="date">
+				<input type="radio" name="gender">남자
+				<input type="radio" name="gender">여자
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔이메일</center></th>
+			<td>
+				<input type="email" name="email" placeholder="" id="email" autocomplete="off"> @
+				<input type="email" name="email" placeholder="" id="email" autocomplete="off">
+				<select name="email2" id="email2">
+					<option value="">메일주소 선택
+					<option value="naver.com">naver.com
+					<option value="daum.net">daum.net
+					<option value="gmail.com">gmail.com
+				</select>
+				<input type="button" value="✔인증코드 발송">
+				<br><input type="text" name="code"> <input type="button" value="✔인증 확인">
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔연락처</center></th>
+			<td>
+				<span>휴대전화</span>
+				<select name="phone" id="phone">
+					<option value="">010
+					<option value="010">010
+					<option value="011">011
+				</select> -
+				<input type="phone" name="phone" placeholder="" id="phone" autocomplete="off"> -
+				<input type="phone" name="phone" placeholder="" id="phone" autocomplete="off">
+				<br><span>일반전화</span>
+				<select name="telephone" id="telephone">
+					<option value="">선택
+					<option value="02">02
+					<option value="031">031
+					<option value="032">032
+					<option value="051">051
+					<option value="052">052
+					<option value="053">053
+					<option value="054">054
+					<option value="055">055
+					<option value="033">033
+					<option value="041">041
+					<option value="042">042
+					<option value="043">043
+					<option value="061">061
+					<option value="062">062
+					<option value="063">063
+					<option value="064">064
+				</select> -
+				<input type="telephone" name="telephone" placeholder="" id="telephone" autocomplete="off"> -
+				<input type="telephone" name="telephone" placeholder="" id="telephone" autocomplete="off">
+				<br><span style="color: #f25549;">💬 연락처는 둘 중 하나만 입력해도 됩니다.</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔우편번호</center></th>
+			<td>
+				<input type="text" name="postcode" placeholder="" id=postcode autocomplete="off">
+				<input type="button" value="🔍︎ 주소검색">
+			</td>
+		</tr>
+		<tr>
+			<th><center>✔주소</center></th>
+			<td>
+				<textarea rows="1" cols="100" name=contents placeholder=""></textarea>
+				<br><textarea rows="1" cols="30" name=contents placeholder=""></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th><center>정보수신 여부</center></th>
+			<td>
+				<span>서비스 및 이벤트 소식을
+				<input type="checkbox" name="info">Email로 수신하겠습니다.
+				<input type="checkbox" name="info">SMS로 수신하겠습니다.</span>
+			</td>
+		</tr>
+	</table>
+	<br>
+		<center><input type="button" value="✔저&emsp;&emsp;장">
+				<input type="reset" value="취&emsp;&emsp;  소">
+		</center>
+    <br>
+	<h3 style="margin-left:280px"><b>▣작가정보</b></h3>
+	<table width="70%" th width="100px" td width="700px">
+		<tr >
+			<th><center>프로필 이미지</center></th>
+			<td><input type="file" name="file"></td>
+		</tr>
+		<tr>
+			<th><center>✔필명</center></th>
+			<td>
+				<input type="text" name="nickname" placeholder="" id=nickname autocomplete="off">
+				<br><span style="color: #f25549;">💬필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>대표작</center></th>
+			<td><textarea rows="1" cols="100" name=contents placeholder="대표작을 입력해주세요."></textarea></td>
+		</tr>
+		<tr>
+			<th><center>수상내역</center></th>
+			<td>
+				<textarea rows="14" cols="100" name="contents" placeholder="수상내역을 입력해주세요."></textarea>
+				<br><span style="color: #f25549;">💬 여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>주요작품</center></th>
+			<td>
+				<textarea rows="1" cols="50" name="contents" placeholder="스토리의 제목을 입력하세요"></textarea>
+				<textarea rows="1" cols="50" name="contents" placeholder="해당 스토리의 역할을 입력하세요"></textarea>
+				<input input type="button" value="🗑 삭제">
+				<br><input type="button" value="+ 추가">
+				<br><span style="color: #f25549;">💬본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.</span>
+				<br><span style="color: #f25549;">(역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)</span>
+			</td>
+		</tr>
+		<tr>
+			<th><center>작가정보공개설정</center></th>
+			<td>
+				<input type="radio" name=open>공개
+				<input type="radio" name=open>비공개
+			</td>
+		</tr>
+	</table>
+	<br>
+		<center><input type="button" value="✔저&emsp;&emsp;장">
+				<input type="reset" value="취&emsp;&emsp;  소">
+		</center>
+  	<br>
+	<h3 style="margin-left:280px"><b>▣이용자 정보</b></h3>
+	<table width="70%" width="100px" width="700px">
+		<tr >
+			<th><center>✔소속(회사)</center></th>
+			<td><input type="text" name="company" id="company"></td>
+		</tr>
+		<tr>
+			<th><center>사업자등록번호</center></th>
+			<td><input type="text"> - <input type="text"> - <input type="text"></td>
+		</tr>
+		<tr>
+			<th><center>✔사업자등록증(첨부)</center></th>
+			<td>
+				<input type="file" name="file" multiple="multiple">
+				<br><span style="color: #f25549;">
+					💬소속(회사)의 사업자등록증을 업로드해주시기 바랍니다.(이미지 파일만 업로드 가능/ PDF파일 업로드 불가)
+					</span>
+			</td>
+		</tr>
+		<tr>
+			<th width="100px"><center>✔분야</center></th>
+			<td width="700px">
+				<input type="checkbox" name="area1">영화
+				<input type="checkbox" name="area2">방송
+				<input type="checkbox" name="area3">출판
+				<input type="checkbox" name="area4">공연/예술
+				<input type="checkbox" name="area5">투자/배급
+				<input type="checkbox" name="area6">캐릭터/애니메이션
+				<input type="checkbox" name="area7">기타
+				<input type="text" name="area" placeholder="" id=area>
+			</td>
+		</tr>
+		<tr>
+			<th width="100px"><center>✔직종</center></th>
+			<td width="700px">
+				<input type="checkbox" name="job1">제작자
+				<input type="checkbox" name="job2">투자자
+				<input type="checkbox" name="job3">에이전트
+				<input type="checkbox" name="job47">기타
+				<input type="text" name="job" id=job>
+			</td>
+		</tr>
+		<tr>
+			<th><center>주요 경력</center></th>
+			<td>
+				<b>주요경력사항을 등록해주시기 바랍니다.</b>
+				<br><span style="color: #f25549;">💬 (기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)</span>
+				<br><input type="date"> ~ <input type="date">
+				<input type="text" name="contents" placeholder="사업내용을 입력해주세요." autocomplete="off">
+				<input type="text" name="contents" placeholder="담당업무를 입력해주세요." autocomplete="off">
+				<input type="button" value="🗑 삭제">
+				<br><br><input type="button" value="+ 추가">
+			</td>
+		</tr>
+	</table>
+	<br>
+		<center><input type="button" value="✔저&emsp;&emsp;장">
+				<input type="reset" value="취&emsp;&emsp;  소">
+		</center>
+  
+</body>
+</html>
