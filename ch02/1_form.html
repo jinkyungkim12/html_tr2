@@ -14,9 +14,44 @@
 	<form method="post" action="./result.html">  -->
 			<!--input 태그를 form 태그 안에 꼭꼭꼭 넣어야 함!  -->	
 		<input type="text" name="id" placeholder="아이디" id=id>
-		<input type="password" name="password" placeholder="비밀번호" id="password">
+		<br><br><input type="password" name="password" placeholder="비밀번호" id="password">
 		
-		<input type="submit">
+		<br><br>
+		<select name="gender" id="">
+			<option value="">선택
+			<option value="남자">남자
+			<option value="여자">여자
+		</select>
+		
+		<br><br>
+		<select name="mobile" id="">
+			<option value="">선택
+			<option value="SKT">SKT
+			<option value="KT">KT
+			<option value="LGT">LGT
+		</select>
+		
+		<br><br>
+		<h5>취미</h5>
+		<input type="checkbox" name="hobby">등산
+		<input type="checkbox" name="hobby2">축구
+		<input type="checkbox" name="hobby3">달리기
+		<input type="checkbox" name="hobby4">보드게임
+		<input type="checkbox" name="hobby5">다이어리 꾸미기
+		<input type="checkbox" name="hobby6">맛집투어
+		
+		<!-- radio는 특성상 1가지 옵션만 선택할 수 있다. 
+		만약 2가지 이상의 옵션을 선택할경우 name을 여러가지로 명으로 바꾸면 된다-->
+		<br><br>
+		<h5>가입경로</h5>
+		<input type="radio" name=route>신문
+		<input type="radio" name=route>잡지
+		<input type="radio" name=route>인터넷검색
+		<input type="radio" name=route>지인추천
+		
+		<br><br><input type="submit">
+	
+	
 	</form>
   
 </body>
