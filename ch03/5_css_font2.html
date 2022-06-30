@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>5_css_font2</title>
+	
+	<style>
+		@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		.ng-font {
+			font-family:'Nanum Gothic', 돋움; 
+		}
+		p {
+			font-size:30px;
+		}
+		
+		@font-face {
+		    font-family: 'EarlyFontDiary';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		#diary {
+			font-family: 'EarlyFontDiary';
+			font-style: italic;
+		}
+		
+		@font-face {
+		    font-family: 'HSYuji-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		#yuji {
+			font-family: 'HSYuji-Regular';
+			font-style: italic;
+		}
+		
+		@font-face {
+		    font-family: 'HS-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		#rabbit {
+			font-family: 'HS-Regular';
+		}				
+		
+	</style>
+</head>
+
+<body>
+
+  <p>브라우저 웹 폰트 사용</p>
+  <p class="ng-font">나눔고딕 웹 폰트 사용</p>
+  <p id="diary">다이어리 웹 폰트 사용</p>
+  <p id="yuji">H유지 웹 폰트 사용</p>
+  <p id="rabbit">산토끼 웹 폰트 사용</p>
+  
+</body>
+</html>
+
