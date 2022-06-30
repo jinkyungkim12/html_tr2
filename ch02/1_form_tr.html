@@ -93,36 +93,24 @@
 					<option value="031">031
 					<option value="032">032
 					<option value="051">051
-					<option value="052">052
-					<option value="053">053
-					<option value="054">054
-					<option value="055">055
-					<option value="033">033
-					<option value="041">041
-					<option value="042">042
-					<option value="043">043
-					<option value="061">061
-					<option value="062">062
-					<option value="063">063
-					<option value="064">064
 				</select> -
-				<input type="telephone" name="telephone" placeholder="" id="telephone" autocomplete="off"> -
-				<input type="telephone" name="telephone" placeholder="" id="telephone" autocomplete="off">
+				<input type="telephone" name="telephone" placeholder="" id="telephone"> -
+				<input type="telephone" name="telephone" placeholder="" id="telephone">
 				<br><span style="color: #f25549;">💬 연락처는 둘 중 하나만 입력해도 됩니다.</span>
 			</td>
 		</tr>
 		<tr>
 			<th><center>✔우편번호</center></th>
 			<td>
-				<input type="text" name="postcode" placeholder="" id=postcode autocomplete="off">
+				<input type="text" name="postcode" placeholder="" id="postcode">
 				<input type="button" value="🔍︎ 주소검색">
 			</td>
 		</tr>
 		<tr>
 			<th><center>✔주소</center></th>
 			<td>
-				<textarea rows="1" cols="100" name=contents placeholder=""></textarea>
-				<br><textarea rows="1" cols="30" name=contents placeholder=""></textarea>
+				<textarea rows="1" cols="100" name="contents"></textarea>
+				<br><textarea rows="1" cols="30" name="contents"></textarea>
 			</td>
 		</tr>
 		<tr>
@@ -136,7 +124,7 @@
 	</table>
 	<br>
 	<center><input type="button" value="✔저&emsp;&emsp;장">
-		<input type="reset" value="취&emsp;&emsp;  소">
+			<input type="reset" value="취&emsp;&emsp;  소">
 	</center>
     <br>
 	<h3 style="margin-left:280px"><b>▣작가정보</b></h3>
@@ -148,13 +136,13 @@
 		<tr>
 			<th><center>✔필명</center></th>
 			<td>
-				<input type="text" name="nickname" placeholder="" id=nickname autocomplete="off">
+				<input type="text" name="nickname" id="nickname">
 				<br><span style="color: #f25549;">💬필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</span>
 			</td>
 		</tr>
 		<tr>
 			<th><center>대표작</center></th>
-			<td><textarea rows="1" cols="100" name=contents placeholder="대표작을 입력해주세요."></textarea></td>
+			<td><textarea rows="1" cols="100" name="contents" placeholder="대표작을 입력해주세요."></textarea></td>
 		</tr>
 		<tr>
 			<th><center>수상내역</center></th>
@@ -177,14 +165,14 @@
 		<tr>
 			<th><center>작가정보공개설정</center></th>
 			<td>
-				<input type="radio" name=open>공개
-				<input type="radio" name=open>비공개
+				<input type="radio" name="open">공개
+				<input type="radio" name="open">비공개
 			</td>
 		</tr>
 	</table>
 	<br>
 	<center><input type="button" value="✔저&emsp;&emsp;장">
-		<input type="reset" value="취&emsp;&emsp;  소">
+			<input type="reset" value="취&emsp;&emsp;  소">
 	</center>
   	<br>
 	<h3 style="margin-left:280px"><b>▣이용자 정보</b></h3>
@@ -216,7 +204,7 @@
 				<input type="checkbox" name="area5">투자/배급
 				<input type="checkbox" name="area6">캐릭터/애니메이션
 				<input type="checkbox" name="area7">기타
-				<input type="text" name="area" placeholder="" id=area>
+				<input type="text" name="area" id="area">
 			</td>
 		</tr>
 		<tr>
@@ -226,7 +214,7 @@
 				<input type="checkbox" name="job2">투자자
 				<input type="checkbox" name="job3">에이전트
 				<input type="checkbox" name="job47">기타
-				<input type="text" name="job" id=job>
+				<input type="text" name="job" id="job">
 			</td>
 		</tr>
 		<tr>
@@ -244,7 +232,7 @@
 	</table>
 	<br>
 	<center><input type="button" value="✔저&emsp;&emsp;장">
-		<input type="reset" value="취&emsp;&emsp;  소">
+			<input type="reset" value="취&emsp;&emsp;  소">
 	</center>
   
 </body>
