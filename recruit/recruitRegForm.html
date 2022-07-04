@@ -3,11 +3,346 @@
 <head>
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1.0">
-	<title>Name</title>
+	<title>입사지원서</title>
+	
+	<style type="text/css">
+		table, th, td{
+		margin:auto;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 10px;
+		}
+		table {
+			width:70%;
+		}
+		th {
+			width: 100px;
+		}
+		td {
+			text-align: center;
+		}
+		.a {
+			background-color:#7df2c9;
+		}
+		.btn {
+			background-color:#7df2c9;
+			margin-align: center;
+		}
+		
+		
+	</style>
 </head>
-
 <body>
-등록화면
-  
+	<center><h1>입사지원서</h1></center>		
+	<table>	
+		<tr>
+			<th style="background-color:#7df2c9;">지원분야</th>
+			<th>
+				<input type="text" name="" id="">
+			</th>
+			<th style="background-color:#7df2c9;">경력구분</th>
+			<th>
+				<select name="career" id="career">
+					<option value="선택">
+					<option value="신입">신입 
+					<option value="경력">경력 
+				</select>
+			</th>
+			<th style="background-color:#7df2c9;">희망연봉</th>
+			<th>
+				<input type="text" name="" id="">
+			</th>
+		</tr>
+	</table>	
+	<br>
+	<br>
+	<h4  style="margin-left:280px">□기본정보</h4>
+	<table>	
+		<tr>
+			<td width="20px" rowspan="6">
+				<input type="file" name="file">
+			</td>
+			<td width="80px" class="a">성&emsp;&emsp;명</td>
+			<td width="300px">
+				<input type="text" name="" id="">
+			</td>
+			<td width="80px" class="a">한&emsp;&emsp;문</td>
+			<td width="300px">
+				<input type="text" name="" id="">
+			</td>
+		</tr>
+		<tr>
+<!-- 			
+				<td width="70px"></td>
+			 -->	
+			<td width="30px" class="a">영&emsp;&emsp;문</td>
+			<td width="100px">
+				<input type="text" name="" id="">
+			</td>
+			<td width="30px" class="a">생년월일</td>
+			<td width="100px">
+				<input type="text" name="" id="">
+			</td>
+		</tr>
+		<tr>
+<!-- 			
+				<td width="70px"></td>
+				 -->
+			<td width="30px" class="a">전화번호</td>
+			<td width="100px">
+				<select name="phone" id="phone">
+					<option value="">010
+					<option value="011">011
+					<option value="017">017
+				</select> -
+				<input type="phone" name="phone" id="phone" autocomplete="off" width="30px"> -
+				<input type="phone" name="phone" id="phone" autocomplete="off" width="30px">
+			</td>
+			<td width="30px" class="a">비상연락망</td>
+			<td width="100px">
+				<select name="phone2" id="phone2">
+					<option value="">010
+					<option value="011">011
+					<option value="017">017
+				</select> -
+				<input type="phone" name="phone2" id="phone2" autocomplete="off" width="30px"> -
+				<input type="phone" name="phone2" id="phone2" autocomplete="off" width="30px">
+			</td>
+		</tr>
+		<tr>
+<!-- 			
+				<td width="70px"></td>
+			 -->
+			<td width="30px" class="a">전자우편</td>
+			<td width="100px">
+				<input type="email" name="email" id="email" autocomplete="off"> @
+				<input type="email" name="email" id="email" autocomplete="off">
+				<select name="email2" id="email2">
+					<option value="">메일주소 선택
+					<option value="naver.com">naver.com
+					<option value="daum.net">daum.net
+					<option value="gmail.com">gmail.com
+				</select>
+			</td>
+			<td width="30px" class="a">나&emsp;&emsp;이</td>
+			<td width="100px">
+				<input type="text" name="" id="">세
+			</td>
+		</tr>
+		<tr>
+<!-- 			
+				<td width="70px"></td>
+				 -->
+			<td width="30px" class="a">주&emsp;&emsp;소</td>
+			<td width="100px" colspan="3">
+				<input type="text" name="postcode" id="postcode">
+				<input type="button" value="🔍︎ 주소검색">
+				<br><input type="text" name="" id="" width="300px">
+			</td>
+<!-- 				
+				<td width="100px"></td>
+				<td width="100px"></td>
+				 -->
+		</tr>
+		<tr>
+<!-- 			
+				<td width="70px"></td>
+				 -->
+			<td class="a">취미생활</td>
+			<td width="100px" colspan="3">
+				<input type="text" name="" id="">
+			</td>
+<!-- 				
+				<td width="100px"></td>
+				<td width="100px"></td>
+				 -->
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h4  style="margin-left:280px">□학력사항 (최신이력이 가장 위로)</h4>
+	<table>		
+		<tr>
+			<td width="100px" class="a">기간</td>
+			<td width="100px" class="a">출신학교</td>
+			<td width="50px" class="a">구분</td>
+			<td width="100px" class="a">학과</td>
+			<td width="50px" class="a">소재지</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<select name="career" id="career">
+					<option value="선택">
+					<option value="졸업">졸업 
+					<option value="졸업 유예">졸업 유예  
+					<option value="중퇴">중퇴
+					<option value="휴학">휴학 
+					<option value="재학">재학 
+				</select>
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<select name="career" id="career">
+					<option value="선택">
+					<option value="졸업">졸업  
+					<option value="중퇴">중퇴
+				</select>
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h4  style="margin-left:280px">□교육연수</h4>
+	<table>		
+		<tr>
+			<td width="100px" class="a" >연수기간</center></td>
+			<td width="100px" class="a">연수기관</center></td>
+			<td width="250px" class="a">연수과정 및 내용</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<textarea rows="10" cols="20" name="contents"></textarea>
+			</td>
+			<td>
+				<textarea rows="10" cols="50" name="contents"></textarea>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h4  style="margin-left:280px">□자격사항</h4>
+	<table>		
+		<tr>
+			<td width="100px" class="a">취득일</td>
+			<td width="100px" class="a">종류 및 등급</td>
+			<td width="80px" class="a">발행처</td>
+			<td width="150px" class="a">보유기술 및 수준</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h4  style="margin-left:280px">□경력사항(4대 보험 가입 경력)</h4>
+	<table>		
+		<tr>
+			<td width="110px" class="a">활동기간</td>
+			<td width="50px" class="a">기&emsp;&emsp;관</td>
+			<td width="50px" class="a">담당업무</td>
+			<td width="250px" class="a">경험 및 습득역량</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="" >
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="" >
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="">
+			</td>
+			<td>
+				<input type="text" name="" id="" >
+			</td>
+		</tr>
+	</table>
+	<h4  style="margin-left:280px">□자기소개서</h4>
+	<table>		
+		<tr>
+			<td class="a">자기소개서(자유형식)</td>
+		</tr>
+		<tr>
+			<td height="500px">
+				<textarea rows="50" cols="110" name="contents"></textarea>
+			</td>
+		</tr>
+	</table>
+	<input type="button" value="취소" onClick="location.href='recruitList.html'" class="btn">
+	<input type="button" value="저장" onClick="location.href='recruitView.html'" class="btn">
+
 </body>
 </html>
