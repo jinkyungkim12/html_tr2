@@ -27,11 +27,14 @@
 			border-top: 1px solid gray;
 			border-bottom: 1px solid gray;
 		}
-		.b, c {
-			margin-left: 1400px;
+		#b {
+			margin-left: 1300px;
 		}
-		.d {
-			margin-left: 1400px;
+		#c {
+			margin-left: 1600px;
+		}
+		#d {
+			margin-left: 1600px;
 		}
 		
 	</style>
@@ -41,8 +44,8 @@
 <body>
 
 	<h1><center>입사지원자 목록</center></h1>
-	<input type="text" name="postcode" id="postcode" placeholder="검색어 입력" class="b">
-	<input type="button" value="🔍︎검색" class="c">
+	<input type="text" placeholder="검색어 입력" id="b"  width="100px" height="10px">
+	<input type="button" value="🔍︎검색" id="c" width="50px" height="10px" style="background-color: #dffbb6;">
 	<br><br>
 	<table>
     	 <tr>
@@ -136,9 +139,7 @@
 	 	
 	 </table>
 	 <br>
-	<form action="recruitRegForm.html" class="d">
-		<input type="button" value="등록">
- 	</form>
+		<input type="button" id="d" value="등록" width="50px" height="10px" style="background-color: #dffbb6;" onClick="location.href='recruitForm.html'">
 	 <br><br>
 	 
   
