@@ -3,11 +3,84 @@
 <head>
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1.0">
-	<title>Name</title>
+	<title>11_css_table</title>
 </head>
+	
+	<style type="text/css">
+		table{
+			border: solid;
+			border-width: 1px;
+			
+			/* border-collapse:separate; */
+			border-collapse: collapse;
+			
+			/* border-spacing: 10px 10px; */
+			
+			width: 100%;
+			
+			/* table-layout: auto; 컨텐츠 길이에 따라 다름 */
+			table-layout: fixed;		
+		}
+		tr, th, td {
+			border: solid;
+			border-width: 1px;
+			border-collapse: collapse;
+			text-align: center;
+			/* text-align: left; */
+			/* text-align: right; */
+			
+			height: 50px;
+			vertical-align: top;
+		}
+	</style>
+
 
 <body>
+	<table>
+		<tr>
+			<th width="80px">번호</th>
+			<th width="80px">이름</th>
+			<th width="100px">아이디</th>
+			<td>이메일</td>
+			<td width="200px">모바일</td>
+		</tr>
 
-  
+		<tr>
+			<td height="100px">1</td>
+			<td>김진경</td>
+			<td>jk</td>
+			<td>jk@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>김유미</td>
+			<td>Yoom</td>
+			<td>Yoom@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>조예은</td>
+			<td>yeun</td>
+			<td>yeun@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>고소영</td>
+			<td>soyoung</td>
+			<td>soso@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>안예닮</td>
+			<td>yedarm</td>
+			<td>yedarm@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+	</table>
+ 
 </body>
 </html>
