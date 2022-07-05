@@ -41,7 +41,7 @@
 	<center><h1>입사지원서</h1></center>		
 	<table>	
 		<tr>
-			<th style="background-color:#7df2c9;">지원분야</th>
+			<th style="background-color: #7df2c9;">지원분야</th>
 			<th>디자인</th>
 			<th style="background-color:#7df2c9;">경력구분</th>
 			<th>신입</th>
@@ -242,8 +242,20 @@
 	</table>
 	<br><br>
 	<div class="find-btn">
-    	<button type="button" class="btn" onclick="location.href='recruitRegForm.html'">뒤로가기</button>
-    	<button type="button" class="btn" onclick="location.href='recruitList.html'">제출하기</button>
+		<button onclick="btn4()" class="btn">수정하기</button>
+		<script>
+			function btn4() {
+				alert("수정하시겠습니까?");
+				location.href="recruitModForm.html";
+			}
+		</script>
+		<button onclick="btn5()" class="btn">제출하기</button>
+		<script>
+			function btn5() {
+				alert("제출하시겠습니까?");
+				location.href="recruitList.html";
+			}
+		</script>
 	</div>
 </body>
 </html>

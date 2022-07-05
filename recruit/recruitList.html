@@ -148,9 +148,15 @@
 	 	
 	 </table>
 	 <br>
-		<input type="button" id="c" value="등록" width="50px" height="10px" style="background-color: #dffbb6;" onClick="location.href='recruitRegForm.html'">
-	 <br><br>
-	 
+	 <div class="find-btn">
+		<button onclick="btn3()" id="c" width="50px" height="10px" style="background-color: #dffbb6;">등록</button>
+		<script>
+			function btn3() {
+				alert("등록하시겠습니까?");
+				location.href="recruitRegForm.html";
+			}
+		</script>
+	</div>	
   
 </body>
 </html>

@@ -353,9 +353,25 @@
 		</tr>
 	</table>
 	<br><br>	
-	<div class="find-btn">
+	<!-- <div class="find-btn">
     	<button type="button" class="btn" onclick="location.href='recruitView.html'">저장</button>
-    	<button type="button" class="btn" onclick="location.href='recruitList.html'">취소</button>
-	</div>
+    	<button type="button" class="btn" id="delete" onclick="location.href='recruitList.html'">취소</button>
+	</div> -->
+	<div class="find-btn">
+		<button onclick="btn1()" class="btn">저장</button>
+		<script>
+			function btn1() {
+				alert("저장하시겠습니까?");
+				location.href="recruitView.html";
+			}
+		</script>
+		<button onclick="btn2()" class="btn">취소</button>
+		<script>
+			function btn2() {
+				alert("취소하시겠습니까?");
+				location.href="recruitList.html";
+			}
+		</script>
+	</div>	
 </body>
 </html>
