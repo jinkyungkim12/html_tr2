@@ -29,7 +29,7 @@ td {
 	font-family: 'DeogonPrincess';
 	font-size: 25px;
 	font-weight: bold;
-	color: #black;
+	color: black;
 	text-align: center;
 	margin-left: 470px;
 }
@@ -63,6 +63,7 @@ a:visited {
 }
 a:hover {
   color : #16E933;
+  background-color : #BDF4DD;
 }
 a:active {
   color : green
