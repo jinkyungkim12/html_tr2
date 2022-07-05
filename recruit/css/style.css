@@ -33,8 +33,20 @@ td {
 	margin-left:480px;
 }
 .bg {
-	background-image: url('../image/green.jpeg');
+	background-image: url('../image/green.jpg');
+	background-position: 50% 60%;
+	background-size: 1400px;
 	width:70%;
-	height:500px;
-	margin:auto;		
+	height:300px;
+	margin:auto;
+}
+.bgcontent {
+	position: absolute;
+    top:8%;
+    left:40%;	
+    color: white;
+    font-size: 30px;
+}
+.s2 { 
+	text-shadow: 4px 2px 2px darkgray; 
 }
