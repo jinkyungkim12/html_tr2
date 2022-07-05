@@ -28,6 +28,7 @@ td {
 .links {
 	font-family: 'DeogonPrincess';
 	font-size: 25px;
+	font-weight: bold;
 	color: #black;
 	text-align: center;
 	margin-left: 470px;
@@ -53,4 +54,16 @@ td {
 @font-face {
     font-family: 'DeogonPrincess';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincess.woff2') format('woff2');
+}
+a:link {
+  color : pink;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : #16E933;
+}
+a:active {
+  color : green
 }
