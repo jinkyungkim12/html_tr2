@@ -1,36 +1,36 @@
 table, th, td{
-		margin:auto;
-			border: 1px solid black;
-			border-collapse: collapse;
-		}
-		th, td {
-			padding: 10px;
-		}
-		table {
-			width:70%;
-		}
-		th {
-			width: 100px;
-		}
-		td {
-			text-align: center;
-		}
-		.a {
-			background-color:#7df2c9;
-		}
-		.btn {
-			background-color:#7df2c9;
-			display :inline-block;
-		}
-		.find-btn {
-			text-align: center;
-		}
-		.aaa {
-			width: 800px;
-		}
-		.select, .phone {
-			width: 100px;
-		}
-		#postcode {
-			width: 650px;
-		}
+	margin:auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	 padding: 10px;
+}
+table {
+	 width:70%;
+}
+th {
+	 width: 100px;
+}
+td {
+	 text-align: center;
+}
+.a {
+	 background-color:#7df2c9;
+}
+.btn {
+	 background-color:#7df2c9;
+	 display :inline-block;
+}
+.find-btn {
+	 text-align: center;
+}
+.aaa {
+	 width: 800px;
+}
+.select, .phone {
+	 width: 100px;
+}
+#postcode {
+	 width: 650px;
+}
