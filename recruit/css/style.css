@@ -25,3 +25,16 @@ td {
 #c {
 	margin-left: 1570px;
 }
+.links {
+	font-size: 20px;
+	color: #F0F0F0;
+	text-align: center;
+	display: inline-block;
+	margin-left:480px;
+}
+.bg {
+	background-image: url('../image/green.jpeg');
+	width:70%;
+	height:500px;
+	margin:auto;		
+}
