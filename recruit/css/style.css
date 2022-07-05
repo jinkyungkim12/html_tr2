@@ -26,11 +26,11 @@ td {
 	margin-left: 1570px;
 }
 .links {
-	font-size: 20px;
-	color: #F0F0F0;
+	font-family: 'DeogonPrincess';
+	font-size: 25px;
+	color: #black;
 	text-align: center;
-	display: inline-block;
-	margin-left:480px;
+	margin-left: 470px;
 }
 .bg {
 	background-image: url('../image/green.jpg');
@@ -43,10 +43,14 @@ td {
 .bgcontent {
 	position: absolute;
     top:8%;
-    left:40%;	
+    left:38%;	
     color: white;
     font-size: 30px;
 }
 .s2 { 
 	text-shadow: 4px 2px 2px darkgray; 
+}
+@font-face {
+    font-family: 'DeogonPrincess';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincess.woff2') format('woff2');
 }
