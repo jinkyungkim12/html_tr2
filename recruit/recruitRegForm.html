@@ -28,9 +28,20 @@
 		}
 		.btn {
 			background-color:#7df2c9;
-			margin-align: center;
+			display :inline-block;
 		}
-		
+		.find-btn {
+			text-align: center;
+		}
+		.aaa {
+			width: 800px;
+		}
+		.select, .phone {
+			width: 100px;
+		}
+		#postcode {
+			width: 650px;
+		}
 		
 	</style>
 </head>
@@ -44,7 +55,7 @@
 			</th>
 			<th style="background-color:#7df2c9;">경력구분</th>
 			<th>
-				<select name="career" id="career">
+				<select name="career" id="career" class="select">
 					<option value="선택">
 					<option value="신입">신입 
 					<option value="경력">경력 
@@ -83,7 +94,7 @@
 			</td>
 			<td width="30px" class="a">생년월일</td>
 			<td width="100px">
-				<input type="text" name="" id="">
+				<input type="date" name="" id="">
 			</td>
 		</tr>
 		<tr>
@@ -97,8 +108,8 @@
 					<option value="011">011
 					<option value="017">017
 				</select> -
-				<input type="phone" name="phone" id="phone" autocomplete="off" width="30px"> -
-				<input type="phone" name="phone" id="phone" autocomplete="off" width="30px">
+				<input type="phone" name="phone" class="phone" autocomplete="off"> -
+				<input type="phone" name="phone" class="phone" autocomplete="off">
 			</td>
 			<td width="30px" class="a">비상연락망</td>
 			<td width="100px">
@@ -107,8 +118,8 @@
 					<option value="011">011
 					<option value="017">017
 				</select> -
-				<input type="phone" name="phone2" id="phone2" autocomplete="off" width="30px"> -
-				<input type="phone" name="phone2" id="phone2" autocomplete="off" width="30px">
+				<input type="phone" name="phone2" class="phone" autocomplete="off"> -
+				<input type="phone" name="phone2" class="phone" autocomplete="off">
 			</td>
 		</tr>
 		<tr>
@@ -117,9 +128,9 @@
 			 -->
 			<td width="30px" class="a">전자우편</td>
 			<td width="100px">
-				<input type="email" name="email" id="email" autocomplete="off"> @
-				<input type="email" name="email" id="email" autocomplete="off">
-				<select name="email2" id="email2">
+				<input type="email" name="email" class="phone" autocomplete="off"> @
+				<input type="email" name="email" class="phone" autocomplete="off">
+				<select name="email2" >
 					<option value="">메일주소 선택
 					<option value="naver.com">naver.com
 					<option value="daum.net">daum.net
@@ -128,7 +139,7 @@
 			</td>
 			<td width="30px" class="a">나&emsp;&emsp;이</td>
 			<td width="100px">
-				<input type="text" name="" id="">세
+				<input type="text">세
 			</td>
 		</tr>
 		<tr>
@@ -139,7 +150,7 @@
 			<td width="100px" colspan="3">
 				<input type="text" name="postcode" id="postcode">
 				<input type="button" value="🔍︎ 주소검색">
-				<br><input type="text" name="" id="" width="300px">
+				<br><input type="text" name="" class="aaa">
 			</td>
 <!-- 				
 				<td width="100px"></td>
@@ -152,7 +163,7 @@
 				 -->
 			<td class="a">취미생활</td>
 			<td width="100px" colspan="3">
-				<input type="text" name="" id="">
+				<input type="text" class="aaa">
 			</td>
 <!-- 				
 				<td width="100px"></td>
@@ -176,10 +187,10 @@
 				<input type="date" name="date"> ~ <input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school">
 			</td>
 			<td>
-				<select name="career" id="career">
+				<select name="career" id="career" class="select">
 					<option value="선택">
 					<option value="졸업">졸업 
 					<option value="졸업 유예">졸업 유예  
@@ -189,10 +200,10 @@
 				</select>
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school">
 			</td>
 		</tr>
 		<tr>
@@ -200,20 +211,20 @@
 				<input type="date" name="date"> ~ <input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school">
 			</td>
 			<td>
-				<select name="career" id="career">
+				<select name="career" id="career" class="select">
 					<option value="선택">
 					<option value="졸업">졸업  
 					<option value="중퇴">중퇴
 				</select>
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school"
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text" class="school">
 			</td>>
 		</tr>
 	</table>
@@ -231,10 +242,10 @@
 				<input type="date" name="date"> ~ <input type="date" name="date">
 			</td>
 			<td>
-				<textarea rows="10" cols="20" name="contents"></textarea>
+				<textarea rows="10" cols="30" name="contents"></textarea>
 			</td>
 			<td>
-				<textarea rows="10" cols="50" name="contents"></textarea>
+				<textarea rows="10" cols="60" name="contents"></textarea>
 			</td>
 		</tr>
 	</table>
@@ -253,13 +264,13 @@
 				<input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 		</tr>
 		<tr>
@@ -267,13 +278,13 @@
 				<input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 		</tr>
 	</table>
@@ -292,27 +303,13 @@
 				<input type="date" name="date"> ~ <input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="" >
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<input type="date" name="date"> ~ <input type="date" name="date">
-			</td>
-			<td>
-				<input type="text" name="" id="">
-			</td>
-			<td>
-				<input type="text" name="" id="">
-			</td>
-			<td>
-				<input type="text" name="" id="" >
+				<input type="text">
 			</td>
 		</tr>
 		<tr>
@@ -320,13 +317,27 @@
 				<input type="date" name="date"> ~ <input type="date" name="date">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="">
+				<input type="text">
 			</td>
 			<td>
-				<input type="text" name="" id="" >
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="date" name="date"> ~ <input type="date" name="date">
+			</td>
+			<td>
+				<input type="text">
+			</td>
+			<td>
+				<input type="text">
+			</td>
+			<td>
+				<input type="text">
 			</td>
 		</tr>
 	</table>
@@ -337,12 +348,14 @@
 		</tr>
 		<tr>
 			<td height="500px">
-				<textarea rows="50" cols="110" name="contents"></textarea>
+				<textarea rows="30" cols="150" name="contents"></textarea>
 			</td>
 		</tr>
 	</table>
-	<input type="button" value="취소" onClick="location.href='recruitList.html'" class="btn">
-	<input type="button" value="저장" onClick="location.href='recruitView.html'" class="btn">
-
+	<br><br>	
+	<div class="find-btn">
+    	<button type="button" class="btn" onclick="location.href='recruitView.html'">저장</button>
+    	<button type="button" class="btn" onclick="location.href='recruitList.html'">취소</button>
+	</div>
 </body>
 </html>
