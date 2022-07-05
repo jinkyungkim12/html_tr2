@@ -1,0 +1,37 @@
+table, th, td{
+		margin:auto;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 5px;
+		}
+		table {
+			width:70%;
+		}
+		th {
+			width: 100px;
+		}
+		td, .find-btn, .center {
+			text-align: center;
+		}
+		.a {
+			background-color:#7df2c9;
+		}
+		.btn {
+			background-color:#7df2c9;
+			display :inline-block;
+		}
+		#aaa {
+			width: 800px;
+		}
+		#select, #phone {
+			width: 100px;
+			text-align: center;
+		}
+		#postcode {
+			width: 650px;
+		}
+		#ccc {
+			width: 350px;
+		}
