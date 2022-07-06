@@ -5,12 +5,6 @@
 	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 	<title>입사지원서 목록</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
-	<script>
-		function btn3() {
-				alert("입사지원서를 등록하시겠습니까?");
-				location.href="recruitRegForm.html";
-			}
-	</script>
 </head>
  
 <body>
@@ -145,7 +139,14 @@
 	</table>
 	<br>
 	<div class="find-btn">
-		<button onclick="btn3()" id="c" width="50px" height="10px" style="background-color: #89E286;">등록</button>
+		<button onclick="btn3()" id="c" width="50px" height="10px" style="background-color: #89E286;">등록
+			<script>
+				function btn3() {
+						alert("입사지원서를 등록하시겠습니까?");
+						location.href="recruitRegForm.html";
+					}
+			</script>
+		</button>	
 	</div>	
 </body>
 </html>
